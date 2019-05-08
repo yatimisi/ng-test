@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lesson1',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Lesson1Component implements OnInit {
   name = 'Lux';
   url = 'https://www.google.com';
-  money = 0;
+  @Input() money = 0;
 
   constructor() { }
 
