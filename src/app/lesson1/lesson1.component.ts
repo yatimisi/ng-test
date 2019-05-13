@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lesson1',
@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./lesson1.component.css']
 })
 export class Lesson1Component implements OnInit {
-  name = 'Lux';
-  url = 'https://www.google.com';
+
+  @Output() asd: EventEmitter<number> = new EventEmitter<number>();
+
   @Input() money = 0;
 
   constructor() { }
@@ -15,8 +16,5 @@ export class Lesson1Component implements OnInit {
   ngOnInit() {
   }
 
-  sayHello() {
-    alert(this.name);
-  }
 
 }

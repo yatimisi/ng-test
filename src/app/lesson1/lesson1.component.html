@@ -1,13 +1,3 @@
-<p>
-  lesson1 works!
-</p>
-{{ name }}
-<input type="text" [(ngModel)]="name" />
-<a [href]="url">{{ name }}</a>
-<button (click)="sayHello()">sayHello</button>
-
-<br /><br />
-
-<div>tw$<input type="text" [(ngModel)]="money" /></div>
+tw$<input [(ngModel)]="money" (ngModelChange)="asd.emit($event)" />
 <div>us${{ money * 30 }}</div>
 <div>jp${{ money / 5 }}</div>
