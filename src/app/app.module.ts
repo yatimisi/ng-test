@@ -12,6 +12,8 @@ import { Lesson4Component } from './lesson4/lesson4.component';
 import { Lesson5Component } from './lesson5/lesson5.component';
 import { AbcComponent } from './abc/abc.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
+import { HttptestComponent } from './httptest/httptest.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { Lesson6Component } from './lesson6/lesson6.component';
     Lesson4Component,
     Lesson5Component,
     AbcComponent,
-    Lesson6Component
+    Lesson6Component,
+    HttptestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
